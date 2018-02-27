@@ -25,13 +25,18 @@ Or to just build:
   - Place your keymap files in the keyboard directory
   - Commit your keymaps
 
-Makefile contents:
+Makefile contents (this is what glues it all together):
 
     include ../qmk_keymaps/rules.mk
 
-Optionally override `NAME`, `QMK_DIR` with your own settings. Check `rules.mk` for defaults.
+### Options
 
-Check [`nicinabox/keymaps`](https://github.com/nicinabox/keymaps) for an example
+| Option | Default | Description |
+|--------|---------|-------------|
+| NAME   | `whoami`| Your keymap name in QMK. |
+| QMK_DIR| ../qmk_firmware | Path to qmk_firmware/ |
+
+Check [`nicinabox/keymaps`](https://github.com/nicinabox/keymaps) for an example.
 
 ## Requirements
 
@@ -40,4 +45,4 @@ Check [`nicinabox/keymaps`](https://github.com/nicinabox/keymaps) for an example
 
 ## License
 
-MIT
+MIT Copyright 2018 Nic Haynes
